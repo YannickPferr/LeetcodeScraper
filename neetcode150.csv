@@ -1,0 +1,151 @@
+Problem;Difficulty;Category
+Contains Duplicate;Easy;hashing
+Valid Anagram;Easy;hashing
+Two Sum;Easy;hashing
+Group Anagrams;Medium;hashing
+Top K Frequent Elements;Medium;hashing
+Product of Array Except Self;Medium;hashing
+Valid Sudoku;Medium;hashing
+Encode and Decode Strings;Medium;hashing
+Longest Consecutive Sequence;Medium;hashing
+Valid Palindrome;Easy;twopointers
+Two Sum II - Input Array Is Sorted;Medium;twopointers
+3Sum;Medium;twopointers
+Container with Most Water;Medium;twopointers
+Trapping Rain Water;Hard;twopointers
+Best Time to Buy and Sell Stock;Easy;slidingwindow
+Longest Substring Without Repeating Characters;Medium;slidingwindow
+Longest Repeating Character Replacement;Medium;slidingwindow
+Permutation in String;Medium;slidingwindow
+Minimum Window Substring;Hard;slidingwindow
+Sliding Window Maximum;Hard;slidingwindow
+Valid Parentheses;Easy;stack
+Min Stack;Easy;stack
+Evaluate Reverse Polish Notation;Medium;stack
+Generate Parentheses;Medium;stack
+Daily Temperatures;Medium;stack
+Car Fleet;Medium;stack
+Largest Rectangle in Histogram;Hard;stack
+Binary Search;Easy;binarysearch
+Search a 2D Matrix;Medium;binarysearch
+Koko Eating Bananas;Medium;binarysearch
+Search Rotated Sorted Array;Medium;binarysearch
+Find Minimum in Rotated Sorted Array;Medium;binarysearch
+Time Based Key-Value Store;Medium;binarysearch
+Find Median of Two Sorted Arrays;Hard;binarysearch
+Reverse Linked List;Easy;linkedlist
+Merge Two Sorted Lists;Easy;linkedlist
+Reorder List;Medium;linkedlist
+Remove Nth Node from End of List;Medium;linkedlist
+Copy List with Random Pointer;Medium;linkedlist
+Add Two Numbers;Medium;linkedlist
+Linked List Cycle;Easy;linkedlist
+Find the Duplicate Number;Medium;linkedlist
+LRU Cache;Medium;linkedlist
+Merge K Sorted Lists;Hard;linkedlist
+Reverse Nodes in K-Group;Hard;linkedlist
+Invert Binary Tree;Easy;trees
+Maximum Depth of Binary Tree;Easy;trees
+Diameter of Binary Tree;Easy;trees
+Balanced Binary Tree;Easy;trees
+Same Tree;Easy;trees
+Subtree of Another Tree;Easy;trees
+Lowest Common Ancestor of a Binary Search Tree;Easy;trees
+Binary Tree Level Order Traversal;Medium;trees
+Binary Tree Right Side View;Medium;trees
+Count Good Nodes in a Binary Tree;Medium;trees
+Validate Binary Search Tree;Medium;trees
+Kth Smallest Element in a BST;Medium;trees
+Construct Tree from Preorder and Inorder Traversal;Medium;trees
+Binary Tree Max Path Sum;Hard;trees
+Serialize and Deserialize Binary Tree;Hard;trees
+Implement Trie;Medium;tries
+Design Add and Search Word Data Structure;Medium;tries
+Word Search II;Hard;tries
+Kth Largest Element in a Stream;Easy;heap
+Last Stone Weight;Easy;heap
+K Closest Points to Origin;Medium;heap
+Kth Largest Element in an Array;Medium;heap
+Task Scheduler;Medium;heap
+Design Twitter;Medium;heap
+Find Median from Data Stream;Hard;heap
+Subsets;Medium;backtracking
+Combination Sum;Medium;backtracking
+Permutations;Medium;backtracking
+Subsets II;Medium;backtracking
+Combination Sum II;Medium;backtracking
+Word Search;Medium;backtracking
+Palindrome Partitioning;Medium;backtracking
+Letter Combinations of a Phone Number;Medium;backtracking
+N-Queens;Hard;backtracking
+Number of Islands;Medium;graphs
+Clone Graph;Medium;graphs
+Max Area of Island;Medium;graphs
+Pacific Atlantic Waterflow;Medium;graphs
+Surrounded Regions;Medium;graphs
+Rotting Oranges;Medium;graphs
+Walls and Gates;Medium;graphs
+Course Schedule;Medium;graphs
+Course Schedule II;Medium;graphs
+Redundant Connection;Medium;graphs
+Number of Connected Components in Graph;Medium;graphs
+Graph Valid Tree;Medium;graphs
+Word Ladder;Hard;graphs
+Reconstruct Itinerary;Hard;advancedgraphs
+Min Cost to Connect all Points;Medium;advancedgraphs
+Network Delay Time;Medium;advancedgraphs
+Swim in Rising Water;Hard;advancedgraphs
+Alien Dictionary;Hard;advancedgraphs
+Cheapest Flights Within K Stops;Medium;advancedgraphs
+Climbing Stairs;Easy;dynamicprogramming1
+Min Cost Climbing Stairs;Easy;dynamicprogramming1
+House Robber;Medium;dynamicprogramming1
+House Robber II;Medium;dynamicprogramming1
+Longest Palindromic Substring;Medium;dynamicprogramming1
+Palindromic Substrings;Medium;dynamicprogramming1
+Decode Ways;Medium;dynamicprogramming1
+Coin Change;Medium;dynamicprogramming1
+Maximum Product Subarray;Medium;dynamicprogramming1
+Word Break;Medium;dynamicprogramming1
+Longest Increasing Subsequence;Medium;dynamicprogramming1
+Partition Equal Subset Sum;Medium;dynamicprogramming1
+Unique Paths;Medium;dynamicprogramming2
+Longest Common Subsequence;Medium;dynamicprogramming2
+Best Time to Buy/Sell Stock With Cooldown;Medium;dynamicprogramming2
+Coin Change II;Medium;dynamicprogramming2
+Target Sum;Medium;dynamicprogramming2
+Interleaving String;Medium;dynamicprogramming2
+Longest Increasing Path in a Matrix;Hard;dynamicprogramming2
+Distinct Subsequences;Hard;dynamicprogramming2
+Edit Distance;Hard;dynamicprogramming2
+Burst Balloons;Hard;dynamicprogramming2
+Regular Expression Matching;Hard;dynamicprogramming2
+Maximum Subarray;Easy;greedy
+Jump Game;Medium;greedy
+Jump Game II;Medium;greedy
+Gas Station;Medium;greedy
+Hand of Straights;Medium;greedy
+Merge Triplets to Form Target Triplet;Medium;greedy
+Partition Labels;Medium;greedy
+Valid Parenthesis String;Medium;greedy
+Insert Interval;Medium;intervals
+Merge Intervals;Medium;intervals
+Non-Overlapping Intervals;Medium;intervals
+Meeting Rooms;Easy;intervals
+Meeting Rooms II;Medium;intervals
+Minimum Interval to Include Each Query;Hard;intervals
+Rotate Image;Medium;math
+Spiral Matrix;Medium;math
+Set Matrix Zeroes;Medium;math
+Happy Number;Easy;math
+Plus One;Easy;math
+Pow(x, n);Medium;math
+Multiply Strings;Medium;math
+Detect Squares;Medium;math
+Single Number;Easy;bitmanipulation
+Number of 1 Bits;Easy;bitmanipulation
+Counting Bits;Easy;bitmanipulation
+Reverse Bits;Easy;bitmanipulation
+Missing Number;Easy;bitmanipulation
+Sum of Two Integers;Medium;bitmanipulation
+Reverse Integer;Medium;bitmanipulation
