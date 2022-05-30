@@ -149,3 +149,13 @@ Reverse Bits;Easy;bitmanipulation
 Missing Number;Easy;bitmanipulation
 Sum of Two Integers;Medium;bitmanipulation
 Reverse Integer;Medium;bitmanipulation
+Count Good Nodes in Binary Tree;Medium;trees
+Find Largest Value In Each Tree Row;Medium;trees
+Binary Tree Inorder Traversal;Easy;trees
+Binary Tree Paths;Easy;trees
+Binary Tree Postorder Traversal;Easy;trees
+Binary Tree Preorder Traversal;Easy;trees
+Merge Two Binary Trees;Easy;trees
+Symmetric Tree;Easy;trees
+Intersection Of Two Linked Lists;Easy;linkedlist
+Palindrome Linked List;Easy;linkedlist

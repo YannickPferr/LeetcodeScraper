@@ -4,17 +4,18 @@ from pathlib import Path
 import pandas as pd
 import requests
 
-from config import CSRF_TOKEN, SESSION
+from config import CSRF_TOKEN, SESSION, UTILS_IMPORTS
 from constants import *
 
 
 def string_to_java_class_name(string):
-    regex = r"\bII\b|\bIII\b|\bIV\b|\bVI\b|\bVII\b|\bVIII\b"
-    string = string.replace("(", " ")
-    string = string.replace(")", " ")
-    return "".join(map(lambda x: x if re.search(regex, x) else x.capitalize(), string.strip().split(" ")))
+    roman_regex = r"\bII\b|\bIII\b|\bIV\b|\bVI\b|\bVII\b|\bVIII\b"
+    string = re.sub(r'[^A-Za-z0-9\s]+', ' ', string)
+    return "".join(map(lambda x: x if re.search(roman_regex, x) else x.capitalize(), string.strip().split(" ")))
 
-def construct_java_file(id, title, difficulty, url, java_class_name, code):
+def construct_java_file(id, title, difficulty, url, java_class_name, category, code):
+    package = "package " + category.lower() + "." + difficulty.lower() + ";\n"
+    imports = UTILS_IMPORTS[category.lower()] if category.lower() in UTILS_IMPORTS else ""
     comment = """
     /**
     * Problem: {id}. {title}
@@ -23,7 +24,7 @@ def construct_java_file(id, title, difficulty, url, java_class_name, code):
     */
     """.format(id=id, title=title, difficulty=difficulty, url=url)
     code = re.sub(r"\bclass Solution\b", "public class " + java_class_name, code)
-    return comment + code
+    return package + imports + comment + code
 
 #auth
 header = {"Referer": LEETCODE_BASE_URL, "x-csrftoken": CSRF_TOKEN}
@@ -38,8 +39,7 @@ solved_problems = all_problems[all_problems["status"] == "ac"].reset_index()
 neetcode150 = pd.read_csv(PARENT_DIR / "neetcode150.csv", sep=";")
 category_lookup = {}
 for index, row in neetcode150.iterrows():
-    path = Path(SUBMISSIONS_DIR, row["Category"].lower(), row["Difficulty"].lower())
-    category_lookup[row["Problem"].lower()] = path
+    category_lookup[row["Problem"].lower()] = row["Category"].lower()
 
 #find the last submitted code for all the solved problems and save them as java files grouped by type of problem and difficulty
 num_solved = len(solved_problems)
@@ -61,13 +61,14 @@ for index, row in solved_problems.iterrows():
             continue
 
     #create paths if not exists
-    #e.g. submissions/backtracking/easy, submissions/backtracking/medium, submissions/greedy/easy, ...
-    path = category_lookup[title.lower()] if title.lower() in category_lookup else Path(SUBMISSIONS_DIR, "other", difficulty.lower())
+    #e.g. SUBMISSIONS_DIR/backtracking/easy, SUBMISSIONS_DIR/backtracking/medium, SUBMISSIONS_DIR/greedy/easy, ...
+    category = category_lookup[title.lower()] if title.lower() in category_lookup else "other"
+    path =  Path(SUBMISSIONS_DIR, category, difficulty.lower())
     path.mkdir(parents=True, exist_ok=True)
 
     #construct java file
     java_class_name=string_to_java_class_name(title)
-    java_file = construct_java_file(id, title, difficulty, url, java_class_name, response.json()["code"])
+    java_file = construct_java_file(id, title, difficulty, url, java_class_name, category, response.json()["code"])
 
     #save to file
     f = open(path / (java_class_name + ".java"), "w")

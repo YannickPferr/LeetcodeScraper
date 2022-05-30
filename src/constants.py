@@ -1,7 +1,9 @@
 from pathlib import Path
 
+from config import SUBMISSIONS_PATH
+
 PARENT_DIR = Path(__file__).parent.resolve() / ".."
-SUBMISSIONS_DIR = PARENT_DIR / "submissions"
+SUBMISSIONS_DIR = SUBMISSIONS_PATH if SUBMISSIONS_PATH else PARENT_DIR / "submissions"
 LEETCODE_BASE_URL = "https://leetcode.com"
 PROBLEMS_BASE_URL = "https://leetcode.com/problems"
 SUBMISSIONS_URL = "https://leetcode.com/submissions/latest"
