@@ -56,7 +56,7 @@ Binary Tree Right Side View;Medium;trees
 Count Good Nodes in a Binary Tree;Medium;trees
 Validate Binary Search Tree;Medium;trees
 Kth Smallest Element in a BST;Medium;trees
-Construct Tree from Preorder and Inorder Traversal;Medium;trees
+Construct Binary Tree From Preorder And Inorder Traversal;Medium;trees
 Binary Tree Max Path Sum;Hard;trees
 Serialize and Deserialize Binary Tree;Hard;trees
 Implement Trie;Medium;tries
@@ -111,8 +111,8 @@ Longest Increasing Subsequence;Medium;dynamicprogramming1
 Partition Equal Subset Sum;Medium;dynamicprogramming1
 Unique Paths;Medium;dynamicprogramming2
 Longest Common Subsequence;Medium;dynamicprogramming2
-Best Time to Buy/Sell Stock With Cooldown;Medium;dynamicprogramming2
-Coin Change II;Medium;dynamicprogramming2
+Best Time to Buy And Sell Stock With Cooldown;Medium;dynamicprogramming2
+Coin Change 2;Medium;dynamicprogramming2
 Target Sum;Medium;dynamicprogramming2
 Interleaving String;Medium;dynamicprogramming2
 Longest Increasing Path in a Matrix;Hard;dynamicprogramming2

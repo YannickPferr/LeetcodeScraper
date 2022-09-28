@@ -15,7 +15,6 @@ def string_to_java_class_name(string):
 
 def construct_java_file(id, title, difficulty, url, java_class_name, category, code):
     package = "package " + category.lower() + "." + difficulty.lower() + ";\n"
-    imports = UTILS_IMPORTS[category.lower()] if category.lower() in UTILS_IMPORTS else ""
     comment = """
     /**
     * Problem: {id}. {title}
@@ -24,7 +23,7 @@ def construct_java_file(id, title, difficulty, url, java_class_name, category, c
     */
     """.format(id=id, title=title, difficulty=difficulty, url=url)
     code = re.sub(r"\bclass Solution\b", "public class " + java_class_name, code)
-    return package + imports + comment + code
+    return package + UTILS_IMPORTS + comment + code
 
 #auth
 header = {"Referer": LEETCODE_BASE_URL, "x-csrftoken": CSRF_TOKEN}
